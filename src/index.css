@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #050816, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+
+/* glow */
+.glow {
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.6);
+}
+
+/* glass */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* hover 3D */
+.card3d {
+  transition: 0.3s;
+}
+
+.card3d:hover {
+  transform: perspective(1000px) rotateY(10deg) scale(1.05);
+}
+
+.clip-hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin 20s linear infinite reverse;
+}
