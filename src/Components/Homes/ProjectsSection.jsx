@@ -28,7 +28,7 @@ export default function Projects() {
 
                         {/* NAVIGATION TAB */}
                         <div className="flex justify-center gap-4 mb-10">
-                              {["Personal","IT Support","frontend", "backend"].map((cat) => (
+                              {["Personal","frontend",].map((cat) => (
                                     <button
                                           key={cat}
                                           onClick={() => setActive(cat)}

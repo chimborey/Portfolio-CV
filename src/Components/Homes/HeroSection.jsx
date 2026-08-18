@@ -7,22 +7,63 @@ import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { BsTelegram } from "react-icons/bs";
 
 const techs = [
-  { label: "React", icon: "https://cdn-icons-png.flaticon.com/512/1183/1183672.png" },
-  { label: "C#", icon: "https://cdn-icons-png.flaticon.com/512/6132/6132221.png" },
-  { label: "Java", icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png" },
-  { label: "Postgre", icon: "https://cdn-icons-png.flaticon.com/512/5968/5968342.png" },
-  { label: "Windows", icon: "https://cdn-icons-png.flaticon.com/512/732/732221.png" },
-  { label: "Linux", icon: "https://cdn-icons-png.flaticon.com/512/6124/6124995.png" },
-  { label: "Git", icon: "https://cdn-icons-png.flaticon.com/512/2111/2111432.png" },
-  { label: "Spring", icon: "https://spring.io/img/projects/spring.svg" },
-  { label: "ASP.NET", icon: "https://cdn-icons-png.flaticon.com/512/919/919853.png" },
-  { label: "NodeJS", icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png" },
-  { label: "Docker", icon: "https://cdn-icons-png.flaticon.com/512/6132/6132221.png" },
-  { label: "Tailwind", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
-  { label: "Next.js", icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png" },
-  { label: "TypeScript", icon: "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" }
+  {
+    label: "HTML",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  },
+  {
+    label: "CSS",
+    icon: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+  },
+  {
+    label: "JavaScript",
+    icon: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+  },
+  {
+    label: "React",
+    icon: "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+  },
+  {
+    label: "Tailwind CSS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+  },
+  {
+    label: "Vite",
+    icon: "https://vitejs.dev/logo.svg",
+  },
+  {
+    label: "Java",
+    icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+  },
+  {
+    label: "Spring Boot",
+    icon: "https://spring.io/img/projects/spring.svg",
+  },
+  {
+    label: "Node.js",
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+  },
+  {
+    label: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    label: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    label: "Git",
+    icon: "https://cdn-icons-png.flaticon.com/512/2111/2111432.png",
+  },
+  {
+    label: "GitHub",
+    icon: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
+  },
+  {
+    label: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
 ];
-
 
 const HeroSection = () => {
 
@@ -133,7 +174,8 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="text-gray-400 text-lg max-w-md leading-relaxed"
           >
-            I build responsive and user-friendly web applications using React, JavaScript, Tailwind CSS, and modern web technologies.
+            I am an Information Technology student with a strong interest in Frontend Development. I enjoy building websites with clean UI, responsive design, and a great user experience.
+            I am currently seeking a Frontend Developer Internship opportunity where I can further develop my technical skills, gain practical experience, and contribute to real-world projects.
           </motion.p>
           <div className="flex gap-4">
             {meta.map((item, index) => (

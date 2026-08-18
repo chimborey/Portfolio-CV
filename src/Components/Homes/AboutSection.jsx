@@ -57,10 +57,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 mt-4 leading-relaxed">
-            I am a Web Developer with experience in Frontend development and basic knowledge of Backend and IT Support.
-            I specialize in building responsive and user-friendly web applications using React, JavaScript, and Tailwind CSS.
-            I also have experience working with backend technologies like Spring Boot and MySQL, and basic IT support skills such as system troubleshooting and networking.
-            Currently, I am focusing on improving my frontend development skills while expanding my full-stack knowledge.
+           I am an Information Technology student with a strong passion for designing and developing modern web applications. I enjoy learning new technologies and building projects to apply and strengthen my knowledge. Currently, I am focused on React.js, Tailwind CSS, and integrating frontend applications with Spring Boot REST APIs. My goal is to become a Frontend Developer who creates high-quality, user-friendly web applications with clean, responsive designs and outstanding user experiences (UI/UX).
           </p>
 
           {/* 📊 STATS */}
@@ -73,18 +70,18 @@ export default function About() {
 
             <div className="glass p-4 rounded-xl border border-white/10 hover:scale-105 transition">
               <p className="text-blue-400 font-bold">Backend</p>
-              <p className="text-gray-300 text-sm">Spring Boot / ASP.Net <span className="text-green-500 font-bold">(Studing)</span></p>
+              <p className="text-gray-300 text-sm">Java Springboot(Basic) / MERN(Basic) <span className="text-green-500 font-bold">(Studing)</span></p>
             </div>
 
             <div className="glass p-4 rounded-xl border border-white/10 hover:scale-105 transition">
               <p className="text-blue-400 font-bold">Database</p>
-              <p className="text-gray-300 text-sm">Posgresql</p>
+              <p className="text-gray-300 text-sm">Posgresql / Mongodb</p>
             </div>
 
-            <div className="glass p-4 rounded-xl border border-white/10 hover:scale-105 transition">
+            {/* <div className="glass p-4 rounded-xl border border-white/10 hover:scale-105 transition">
               <p className="text-blue-400 font-bold">IT Support <span className="text-green-500 font-bold">(Studing)</span></p>
               <p className="text-gray-300 text-sm">Network / Troubleshooting</p>
-            </div>
+            </div> */}
 
           </div>
 

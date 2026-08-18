@@ -3,18 +3,18 @@ import { motion } from "framer-motion"
 const experiences = [
       {
             year: "2026 - Present",
-            title: "Full Stack Developer",
-            desc: "Building scalable web applications using React & Spring Boot",
+            title: "Frontend Developer — Learning & Building",
+            desc: "Developing responsive web interfaces using React, JavaScript, Tailwind CSS, and modern frontend tools.",
+      },
+      {
+            year: "2025 - 2026",
+            title: "Web Development Student",
+            desc: "Learning frontend development, UI/UX principles, responsive design, REST APIs, and modern web technologies.",
       },
       {
             year: "2025",
-            title: "IT Support Engineer",
-            desc: "Handled networking, troubleshooting, system maintenance",
-      },
-      {
-            year: "2024",
-            title: "Intern Developer",
-            desc: "Learned web development, APIs, and system support basics",
+            title: "Personal Projects",
+            desc: "Building personal websites and web applications to practice frontend development and improve real-world development skills.",
       },
 ]
 
@@ -22,7 +22,7 @@ export default function Experience() {
       return (
             <section className="min-h-screen flex items-center justify-center px-6 text-white relative overflow-hidden">
 
-                  {/* 🌌 glow background */}
+                  {/* Glow Background */}
                   <div className="absolute w-[600px] h-[600px] bg-purple-500 blur-[180px] opacity-20 rounded-full"></div>
 
                   <div className="max-w-4xl w-full z-10">
@@ -31,9 +31,11 @@ export default function Experience() {
                         <motion.h2
                               initial={{ opacity: 0, y: 40 }}
                               whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.6 }}
+                              viewport={{ once: true }}
                               className="text-4xl font-bold text-center mb-12"
                         >
-                              Experience
+                              My Journey
                         </motion.h2>
 
                         {/* TIMELINE */}
@@ -50,10 +52,10 @@ export default function Experience() {
                                     >
 
                                           {/* DOT */}
-                                          <div className="absolute -left-[30px] top-14 w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
+                                          <div className="absolute -left-[30px] top-6 w-3 h-3 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50"></div>
 
                                           {/* CARD */}
-                                          <div className="glass p-5 rounded-2xl border border-white/10 hover:scale-105 transition">
+                                          <div className="glass p-5 rounded-2xl border border-white/10 hover:scale-[1.02] transition">
 
                                                 {/* YEAR */}
                                                 <p className="text-blue-400 text-sm font-bold">
@@ -65,8 +67,8 @@ export default function Experience() {
                                                       {exp.title}
                                                 </h3>
 
-                                                {/* DESC */}
-                                                <p className="text-gray-300 text-sm mt-2">
+                                                {/* DESCRIPTION */}
+                                                <p className="text-gray-300 text-sm mt-2 leading-relaxed">
                                                       {exp.desc}
                                                 </p>
 
