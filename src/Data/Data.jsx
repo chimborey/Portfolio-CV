@@ -27,43 +27,48 @@ import TemplateSee from '../assets/TemplateSee.jpg'
 import Xplay from '../assets/Xplay.jpg'
 import FitZone from '../assets/FitZone.jpg'
 import Calculator from '../assets/Calculator.jpg'
+import E_45 from '../assets/E_45.png'
+import Cafe_demo from '../assets/Cafe.png'
+
+
 
 
 
 
 export const projects = [
       // page1
+
       {
             title: "Calculator Website",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex id architecto, minima sit amet, voluptates dolores dolorum enim facere velit quidem cumque nemo delectus dolorem vitae.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A responsive calculator application with a clean and interactive user interface.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             path: "https://calculator-olive-three-14.vercel.app/",
             imgUrl: Calculator
       },
-            {
+      {
+            title: "E_45",
+            desc: "A responsive e-commerce platform with product browsing, search, shopping cart, discounts, and order management.",
+            tags: ["React", "Tailwind", "Vite"],
+            category: "frontend",
+            path: "https://ecommerce-45.vercel.app/",
+            imgUrl: E_45
+      },
+      {
+            title: "Cafe POS & Management System",
+            desc: "A cafe management system featuring online ordering, authentication, and an admin dashboard for managing orders, products, inventory, and sales.",
+            tags: ["React", "Tailwind", "Spring Boot", "MySQL"],
+            category: "fullstack",
+            path: "https://cafe-demo-fronntend.vercel.app/",
+            imgUrl: Cafe_demo
+      },
+      {
             title: "Vegetable Website",
             desc: "A farm-to-table marketplace platform featuring real-time seasonal inventory tracking, farm-origin traceability, and a clean, organic-inspired UI.",
             tags: ["React", "Tailwind​", "Vite"],
             category: "frontend",
             imgUrl: Vegetable,
             path: "https://fastman-eta.vercel.app/",
-      },
-      {
-            title: "PrimeStructure Website",
-            desc: "A professional structural engineering platform that enables project tracking, architectural documentation management, and real-time client collaboration features.",
-            tags: ["React", "Tailwind​", "Vite"],
-            category: "frontend",
-            path: "",
-            imgUrl: PrimeStructure
-      },
-      {
-            title: "Educate Website",
-            desc: "A futuristic e-learning platform featuring an immersive Cyber 2026-inspired UI, interactive course modules, and real-time student progress tracking.",
-            tags: ["React", "Tailwind​", "Vite"],
-            category: "frontend",
-            path: "",
-            imgUrl: Educate
       },
       {
             title: "WorldTravel Website",
@@ -84,48 +89,48 @@ export const projects = [
       // pag2
       {
             title: "FastMart Website",
-            desc: "A sophisticated wearable-tech interface featuring real-time health data visualization, interactive product configurators, and a refined Cyber 2026 dark-mode aesthetic.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A modern e-commerce website with product browsing, categories, and a clean responsive interface.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: FastMart,
             path: "",
       },
       {
             title: "Game Website",
-            desc: "A high-octane gaming portal featuring an interactive Cyber 2026 leaderboard, real-time match statistics, and dynamic asset-loading for a lag-free user experience.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A modern gaming website featuring game discovery, interactive sections, and a responsive user interface.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: Game,
             path: "https://gaming-dev.vercel.app/",
       },
       {
             title: "Trip Website",
-            desc: "A comprehensive travel planning portal featuring custom itinerary builders, interactive destination maps, and real-time booking status updates for seamless travel coordination.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A travel website featuring destination discovery, travel information, and a responsive user interface.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: Trip,
             path: "https://gaming-dev.vercel.app/",
       },
       {
             title: "Dog Website",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex id architecto, minima sit amet, voluptates dolores dolorum enim facere velit quidem cumque nemo delectus dolorem vitae.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A responsive website featuring a clean layout and engaging content focused on dogs.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: Dog,
             path: "https://dog-dev-beta.vercel.app/",
       },
       {
             title: "Collection Website",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex id architecto, minima sit amet, voluptates dolores dolorum enim facere velit quidem cumque nemo delectus dolorem vitae.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A modern collection website with product browsing, clean layouts, and responsive design.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: Collection,
             path: "https://shopper-blush-nu.vercel.app/",
       },
       {
             title: "Yoga Website",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex id architecto, minima sit amet, voluptates dolores dolorum enim facere velit quidem cumque nemo delectus dolorem vitae.",
-            tags: ["React", "Tailwind​", "Vite"],
+            desc: "A modern yoga website with a clean responsive layout and engaging user interface.",
+            tags: ["React", "Tailwind", "Vite"],
             category: "frontend",
             imgUrl: Yoga,
             path: "https://yoga-dev.vercel.app/",

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import about from '../../assets/about.jpg'
+import CV_Portfolio from "../../assets/CV_Portfolio.pdf"
 export default function About() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 text-white relative overflow-hidden">
@@ -57,7 +58,7 @@ export default function About() {
           </p>
 
           <p className="text-gray-300 mt-4 leading-relaxed">
-           I am an Information Technology student with a strong passion for designing and developing modern web applications. I enjoy learning new technologies and building projects to apply and strengthen my knowledge. Currently, I am focused on React.js, Tailwind CSS, and integrating frontend applications with Spring Boot REST APIs. My goal is to become a Frontend Developer who creates high-quality, user-friendly web applications with clean, responsive designs and outstanding user experiences (UI/UX).
+            I am an Information Technology student with a strong passion for designing and developing modern web applications. I enjoy learning new technologies and building projects to apply and strengthen my knowledge. Currently, I am focused on React.js, Tailwind CSS, and integrating frontend applications with Spring Boot REST APIs. My goal is to become a Frontend Developer who creates high-quality, user-friendly web applications with clean, responsive designs and outstanding user experiences (UI/UX).
           </p>
 
           {/* 📊 STATS */}
@@ -87,15 +88,23 @@ export default function About() {
 
           {/* 🧾 BUTTON */}
           <div className="mt-6 flex gap-4">
-            <button className="px-6 py-2 bg-blue-500 rounded-xl hover:scale-105 transition shadow-lg">
-              Download CV
-            </button>
+            <div>
+              <a
+                href={CV_Portfolio}
+                download="Chim_Borey_CV.pdf" // ពេលចុចវា會 Download ជាមួយឈ្មោះនេះផ្ទាល់
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-xl font-bold shadow-[0_0_15px_rgba(34,211,238,0.3)] hover:bg-cyan-400 hover:text-black transition-all duration-300 text-center"
+              >
+                Download CV
+              </a>
+            </div>
 
-           <a href="#contact">
-             <button className="px-6 py-2 border border-white/30 rounded-xl hover:scale-105 transition">
-              Contact Me
-            </button>
-           </a>
+            <a href="#contact">
+              <button className="px-6 py-2 border border-white/30 rounded-xl hover:scale-105 transition">
+                Contact Me
+              </button>
+            </a>
           </div>
 
         </motion.div>

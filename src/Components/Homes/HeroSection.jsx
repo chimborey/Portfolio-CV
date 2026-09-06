@@ -1,10 +1,11 @@
-
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import hero from '../../assets/hero.jpg'
 import { GrGithub } from "react-icons/gr";
 import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { BsTelegram } from "react-icons/bs";
+import CV_Portfolio from "../../assets/CV_Portfolio.pdf"
+// មិនចាំបាច់ Import Link មកប្រើសម្រាប់កន្លែងនេះទេ លើកលែងតែមានប្រើនៅកន្លែងផ្សេងទៀត
 
 const techs = [
   {
@@ -40,14 +41,6 @@ const techs = [
     icon: "https://spring.io/img/projects/spring.svg",
   },
   {
-    label: "Node.js",
-    icon: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
-  },
-  {
-    label: "Express.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  },
-  {
     label: "MongoDB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
@@ -62,6 +55,14 @@ const techs = [
   {
     label: "Docker",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    label: "Postman",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnrI6xf-OFVf55qqnjWJ0rXs6nVe8UgZaq5cDjV7nv8A&s=10",
+  },
+  {
+    label: "Postgresql",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG8oz0jV8BNP-f7Q1PQPG6b7Oy8jr7B-h-3ok5lLJNBA&s",
   },
 ];
 
@@ -104,11 +105,12 @@ const HeroSection = () => {
     hidden: { opacity: 0 },
     visible: { opacity: 1 }
   };
+
   return (
-    <section className="relative min-h-screen w-full bg-[#0a0a0c] text-white overflow-hidden flex items-center px-6 md:px-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] bg-fixed">
+    <section className="relative min-h-screen w-full py-14 bg-[#0a0a0c] text-white overflow-hidden flex bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] bg-fixed">
       {/* 1. Background ពណ៌ខ្មៅ (នៅក្រោមគេបំផុត) */}
       <div className="absolute inset-0 bg-[#0a0a0c] -z-10" />
-      {/* 3. រូបភាព Database (នៅពីលើ Background ខ្មៅ តែនៅក្រោម Content) */}
+      {/* 3. រូបភាព Database */}
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center opacity-30"
         style={{
@@ -116,13 +118,13 @@ const HeroSection = () => {
           zIndex: 0
         }}
       />
-      {/* 4. ស្រទាប់ពណ៌ខ្មៅស្រាល (Overlay) ដើម្បីឱ្យអក្សរច្បាស់ */}
+      {/* 4. ស្រទាប់ពណ៌ខ្មៅស្រាល (Overlay) */}
       <div className="absolute inset-0 bg-[#0a0a0c]/80 z-[1]" />
       {/* 5. Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/20 blur-[120px] rounded-full z-[2]" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-red-900/10 blur-[100px] rounded-full z-[2]" />
       {/* 6. Content */}
-      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 relative z-[3]">
+      <div className="mx-auto md:max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-3 container mt-12 relative z-[3]">
 
         {/* Left Side: Content */}
         <div className="flex-1 space-y-6">
@@ -146,6 +148,7 @@ const HeroSection = () => {
               Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Chim Borey</span>
             </motion.h1>
           </div>
+
           {/* Text Rotator Section */}
           <div className="text-2xl font-semibold flex items-center">
             <span>And I'm a&nbsp;</span>
@@ -168,6 +171,7 @@ const HeroSection = () => {
               />
             </motion.div>
           </div>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -177,6 +181,7 @@ const HeroSection = () => {
             I am an Information Technology student with a strong interest in Frontend Development. I enjoy building websites with clean UI, responsive design, and a great user experience.
             I am currently seeking a Frontend Developer Internship opportunity where I can further develop my technical skills, gain practical experience, and contribute to real-world projects.
           </motion.p>
+
           <div className="flex gap-4">
             {meta.map((item, index) => (
               <a
@@ -191,9 +196,19 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <button className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-bold shadow-[0_0_15px_rgba(34,211,238,0.3)] hover:bg-cyan-400 hover:text-black transition-all duration-300">
-            Download CV
-          </button>
+          {/* កន្លែងដែលបានកែតម្រូវ៖ ប្រើប្រាស់ tag <a> ធម្មតាជំនួសឱ្យ <Link> ដើម្បីឱ្យវាបើករូបភាព ឬ Download បាន */}
+          <div>
+            <a
+              href={CV_Portfolio}
+              download="Chim_Borey_CV.pdf" // ពេលចុចវា會 Download ជាមួយឈ្មោះនេះផ្ទាល់
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-bold shadow-[0_0_15px_rgba(34,211,238,0.3)] hover:bg-cyan-400 hover:text-black transition-all duration-300 text-center"
+            >
+              Download CV
+            </a>
+          </div>
+
         </div>
 
         {/* Right Side: Image & Animated Icons */}
@@ -226,7 +241,9 @@ const HeroSection = () => {
               );
             })}
           </div>
+
           <div className="absolute w-[438px] h-[438px] rounded-full border border-cyan-500/20" />
+
           {/* Profile Image */}
           <div className="relative p-1 group cursor-pointer">
             <div className="absolute inset-0 rounded-full bg-cyan-500 blur-2xl opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
@@ -239,7 +256,9 @@ const HeroSection = () => {
               />
             </div>
           </div>
+
         </div>
+
       </div>
     </section>
   );
